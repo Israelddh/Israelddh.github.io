@@ -1,39 +1,76 @@
-# Israel David Duarte Herrera — Personal Portfolio
+# Israel David Duarte Herrera — Scientific Writing Portfolio
 
-Source code for my personal portfolio website, bringing together my work and experience in **healthcare data analysis, biomedical research, clinical research, and scientific communication**.
+Source code for my personal portfolio website, showcasing my background in **scientific writing, medical writing, biomedical research, clinical research, and scientific communication**.
 
-🌐 **Live website:** [https://israelddh.github.io/](https://israelddh.github.io/)
+🌐 **Live website:** https://israelddh.github.io/
 
 ---
 
 ## About
 
-This website presents my professional background, selected projects, scientific publications, and areas of expertise.
+This website presents my professional background, selected writing projects, scientific publications, research experience, and areas of expertise.
 
-The portfolio reflects the intersection of **biomedical science, data analysis, biostatistics, and scientific communication**, with a particular focus on clinical and translational research, healthcare data, and Real-World Evidence (RWE).
+My profile combines a background in **Biology, Bioinformatics and Biostatistics** with four years of experience in clinical and translational research. My research work has involved biomedical data analysis, scientific reporting, literature review, data interpretation, reproducible workflows, and collaboration within multidisciplinary research teams.
 
-The site uses a journal-inspired editorial design to combine professional information with practical examples of analytical and scientific work.
+I am now developing my professional career in **Scientific and Medical Writing**, building on an established research-writing background that includes **eight peer-reviewed publications, one first-author publication, and four peer-review assignments for international scientific journals**.
+
+The portfolio focuses on communicating biomedical evidence clearly and accurately for different audiences, from scientific and clinical readers to broader and non-specialist audiences.
+
+The site uses a journal-inspired editorial design to combine professional information with practical examples of scientific and medical writing.
 
 ---
 
 ## Portfolio
 
-The portfolio includes selected projects demonstrating different aspects of my work, from **healthcare data analysis and reproducible workflows to scientific writing and evidence synthesis**.
+The portfolio includes selected **independent writing samples** designed to demonstrate different aspects of scientific and medical communication.
 
-Projects are developed using public or openly available biomedical and healthcare data and literature whenever possible.
+These samples are portfolio/speculative projects rather than commissioned client work. They are intended to demonstrate my ability to interpret scientific evidence, structure information, adapt content to different audiences, and communicate complex biomedical topics clearly and accurately.
 
 Current and planned areas include:
 
-- Clinical and biomedical data analysis
-- Data cleaning and quality assessment
-- Exploratory data analysis
-- Statistical analysis
-- Real-World Evidence (RWE)
-- Healthcare data visualization and dashboards
-- Reproducible analytical workflows
-- Scientific writing and evidence synthesis
+- Scientific writing
+- Scientific summaries
+- Critical appraisal of research
+- Literature reviews and evidence synthesis
+- Plain-language summaries
+- Medical and clinical research communication
+- Clinical study reporting
+- Scientific editing and revision
+- Evidence-based content development
+- Biomedical research interpretation
+- Data-informed scientific communication
 
-Each project is presented with supporting documentation and, where applicable, downloadable reports or scientific outputs.
+Where appropriate, projects include supporting documentation, references, structured evidence tables, or downloadable reports.
+
+---
+
+## Scientific Background
+
+My scientific background provides the foundation for my writing and communication work.
+
+- **BSc in Biology**
+- **MSc in Bioinformatics and Biostatistics**
+- **PhD in Biomedical Sciences & Public Health — ongoing**
+- Four years of clinical and translational research experience
+- Eight peer-reviewed scientific publications
+- One first-author publication
+- Four peer-review assignments for international scientific journals
+
+This combination of scientific training, research experience, quantitative literacy, and writing practice allows me to work with complex biomedical information while maintaining attention to accuracy, evidence, structure, and audience.
+
+---
+
+## Publications & Peer Review
+
+My research experience includes **eight peer-reviewed publications**, including one first-author paper.
+
+I have also completed **four peer-review assignments** for international scientific journals, including:
+
+- BMC Microbiology
+- Clinical Parkinsonism and Related Disorders — 2 manuscripts
+- Scientific Reports
+
+A complete publication record is available through ORCID.
 
 ---
 
@@ -43,10 +80,11 @@ Each project is presented with supporting documentation and, where applicable, d
 - Responsive design
 - Light and dark mode
 - Professional profile and experience
-- Selected portfolio projects
+- Scientific and medical writing portfolio
 - Scientific publications with DOI links
-- Downloadable project reports
-- Links to GitHub project repositories
+- Downloadable writing samples and reports
+- Links to supporting repositories and resources
+- ORCID and professional profile links
 
 ---
 
@@ -72,12 +110,3 @@ Built with a lightweight, dependency-free stack:
 ├── images/
 ├── index.html
 └── README.md
-```
-
----
-
-## Contact
-
-- **Website:** [https://israelddh.github.io/](https://israelddh.github.io/)
-- **LinkedIn:** [https://www.linkedin.com/in/israel-duarte/](https://www.linkedin.com/in/israel-duarte/)
-- **ORCID:** [https://orcid.org/0000-0001-5427-6019](https://orcid.org/0000-0001-5427-6019)
