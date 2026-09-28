@@ -1,27 +1,113 @@
-// Theme toggle (light / dark)
-const themeToggle = document.getElementById('themeToggle');
+// ---------- Language toggle (ES / EN) ----------
+const langToggle = document.getElementById('langToggle');
 const root = document.documentElement;
 
-function syncToggleUI(theme) {
-  const isDark = theme === 'dark';
-  themeToggle.classList.toggle('is-dark', isDark);
-  themeToggle.setAttribute('aria-pressed', String(isDark));
-  themeToggle.querySelector('.theme-toggle__label').textContent = isDark ? 'Light' : 'Dark';
+const TITLES = {
+  es: {
+    index: 'Israel David Duarte Herrera — Meteorología, biología marina y trabajo de campo',
+    blog: 'Noticias — Israel David Duarte Herrera'
+  },
+  en: {
+    index: 'Israel David Duarte Herrera — Meteorology, Marine Biology & Fieldwork',
+    blog: 'News — Israel David Duarte Herrera'
+  }
+};
+
+function syncLangUI(lang) {
+  const isEn = lang === 'en';
+  langToggle.classList.toggle('is-en', isEn);
+  langToggle.setAttribute('aria-pressed', String(isEn));
+  // the label shows the language you will switch TO
+  langToggle.querySelector('.lang-toggle__label').textContent = isEn ? 'Español' : 'English';
+  const dl = document.getElementById('dateline');
+  if (dl) dl.textContent = new Date().toLocaleDateString(isEn ? 'en-GB' : 'es-ES',
+    { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  const page = document.body.dataset.page === 'blog' ? 'blog' : 'index';
+  document.title = TITLES[lang][page];
 }
 
-syncToggleUI(root.getAttribute('data-theme') || 'light');
+function currentLang() {
+  return root.getAttribute('lang') === 'es' ? 'es' : 'en';
+}
 
-themeToggle.addEventListener('click', () => {
-  const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-  root.setAttribute('data-theme', next);
-  localStorage.setItem('theme', next);
-  syncToggleUI(next);
+// ---------- News rendering ----------
+function renderPosts() {
+  const list = document.getElementById('postList');
+  if (!list) return;
+
+  const lang = currentLang();
+  const limit = parseInt(list.dataset.limit, 10) || Infinity;
+  const posts = (window.POSTS || [])
+    .slice()
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, limit);
+
+  list.innerHTML = '';
+
+  if (!posts.length) {
+    const empty = document.createElement('div');
+    empty.className = 'empty-state';
+    empty.textContent = lang === 'es'
+      ? 'Aún no hay noticias publicadas. Vuelve pronto.'
+      : 'No news published yet. Check back soon.';
+    list.appendChild(empty);
+    return;
+  }
+
+  posts.forEach(p => {
+    const item = document.createElement('article');
+    item.className = 'post';
+
+    const date = new Date(p.date + 'T00:00:00').toLocaleDateString(
+      lang === 'es' ? 'es-ES' : 'en-GB',
+      { day: 'numeric', month: 'short', year: 'numeric' }
+    );
+
+    const head = document.createElement('div');
+    head.className = 'post__meta';
+    head.innerHTML = '<span class="post__date"></span><span class="post__tag"></span>';
+    head.querySelector('.post__date').textContent = date;
+    head.querySelector('.post__tag').textContent = p.tag ? p.tag[lang] : '';
+
+    const body = document.createElement('div');
+    body.className = 'post__body';
+
+    const h3 = document.createElement('h3');
+    const a = document.createElement('a');
+    a.href = p.url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.textContent = p.title[lang];
+    h3.appendChild(a);
+
+    const sum = document.createElement('p');
+    sum.textContent = p.summary[lang];
+
+    const src = document.createElement('span');
+    src.className = 'post__source';
+    src.textContent = (lang === 'es' ? 'Fuente: ' : 'Source: ') + p.source;
+
+    body.append(h3, sum, src);
+    item.append(head, body);
+    list.appendChild(item);
+  });
+}
+
+syncLangUI(currentLang());
+renderPosts();
+
+langToggle.addEventListener('click', () => {
+  const next = currentLang() === 'en' ? 'es' : 'en';
+  root.setAttribute('lang', next);
+  localStorage.setItem('lang', next);
+  syncLangUI(next);
+  renderPosts();
 });
 
-// Footer year
+// ---------- Footer year ----------
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Reveal sections on scroll
+// ---------- Reveal sections on scroll ----------
 const revealTargets = document.querySelectorAll('.section, .hero__grid, .colophon');
 revealTargets.forEach(el => el.classList.add('reveal'));
 
@@ -36,9 +122,10 @@ const observer = new IntersectionObserver((entries) => {
 
 revealTargets.forEach(el => observer.observe(el));
 
-// Highlight active nav link based on scroll position
-const navLinks = document.querySelectorAll('.masthead__nav a');
-const sections = [...navLinks].map(link => document.querySelector(link.getAttribute('href')));
+// ---------- Highlight active nav link (in-page anchors only) ----------
+const navLinks = [...document.querySelectorAll('.masthead__nav a')]
+  .filter(l => l.getAttribute('href').startsWith('#'));
+const sections = navLinks.map(link => document.querySelector(link.getAttribute('href')));
 
 const navObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
