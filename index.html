@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Israel David Duarte Herrera — Meteorology, Marine Biology &amp; Fieldwork</title>
-<meta name="description" content="Israel David Duarte Herrera, biologist with experience in scientific observation aboard fishing vessels, biological sampling, bioinformatics and data analysis. News on meteorology, marine biology and wildlife.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,0..60,400&family=IBM+Plex+Mono:wght@400;500;600&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <title>Israel David Duarte Herrera — Meteorology, Marine Biology & Fieldwork</title>
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%231A1B1E%22/%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-family%3D%22Georgia%2C%20Cambria%2C%20serif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%20letter-spacing%3D%220.5%22%20fill%3D%22%23F6F5F0%22%20text-anchor%3D%22middle%22%3EID%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="Israel David Duarte Herrera, biologist with experience in scientific observation aboard fishing vessels, biological sampling, bioinformatics and data analysis. News on meteorology, marine biology and wildlife.">
 
-<link rel="stylesheet" href="style.css">
-<script>
-  (function(){
-    var stored = localStorage.getItem('lang');
-    document.documentElement.setAttribute('lang', stored === 'es' ? 'es' : 'en');
-  })();
-</script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,0..60,400&family=IBM+Plex+Mono:wght@400;500;600&family=UnifrakturCook:wght@700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%231A1B1E%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-family%3D%22Georgia%2CCambria%2Cserif%22%20font-size%3D%2227%22%20font-weight%3D%22700%22%20letter-spacing%3D%220.5%22%20fill%3D%22%23F6F5F0%22%20text-anchor%3D%22middle%22%3EID%3C%2Ftext%3E%3C%2Fsvg%3E"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    (function () {
+      var stored = localStorage.getItem('lang');
+      document.documentElement.setAttribute(
+        'lang',
+        stored === 'es' ? 'es' : 'en'
+      );
+    })();
+  </script>
 </head>
 
 <body>
@@ -29,90 +44,200 @@
 <header class="masthead">
   <div class="masthead__row">
     <span class="masthead__meta" id="dateline"></span>
+
     <div class="masthead__row-right">
       <span class="masthead__meta">Vol. 2026 · Nº 01</span>
-      <button class="lang-toggle" id="langToggle" type="button" aria-pressed="false" aria-label="Cambiar idioma / Switch language">
-        <span class="lang-toggle__track"><span class="lang-toggle__thumb"></span></span>
+
+      <button
+        class="lang-toggle"
+        id="langToggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="Cambiar idioma / Switch language"
+      >
+        <span class="lang-toggle__track">
+          <span class="lang-toggle__thumb"></span>
+        </span>
         <span class="lang-toggle__label">Español</span>
       </button>
     </div>
   </div>
+
   <div class="nameplate">
-    <p class="nameplate__title"><span data-lang="es">Diario de Campo</span><span data-lang="en">The Field Journal</span></p>
-    <p class="nameplate__sub"><span data-lang="es">Biología marina · Fauna · Meteorología</span><span data-lang="en">Marine biology · Wildlife · Meteorology</span></p>
+    <p class="nameplate__title">
+      <span data-lang="es">Diario de Campo</span>
+      <span data-lang="en">The Field Journal</span>
+    </p>
+
+    <p class="nameplate__sub">
+      <span data-lang="es">Biología marina · Fauna · Meteorología</span>
+      <span data-lang="en">Marine biology · Wildlife · Meteorology</span>
+    </p>
   </div>
+
   <div class="masthead__rule"></div>
 </header>
 
 <div class="navbar">
   <nav class="masthead__nav" aria-label="Primary">
-    <a href="#profile"><span data-lang="es">Perfil</span><span data-lang="en">Profile</span></a>
-    <a href="#competencies"><span data-lang="es">Competencias</span><span data-lang="en">Competencies</span></a>
-    <a href="#news"><span data-lang="es">Noticias</span><span data-lang="en">News</span></a>
-    <a href="#experience"><span data-lang="es">Experiencia</span><span data-lang="en">Experience</span></a>
-    <a href="#education"><span data-lang="es">Formación</span><span data-lang="en">Education</span></a>
-    <a href="#publications"><span data-lang="es">Publicaciones</span><span data-lang="en">Publications</span></a>
-    <a href="#contact"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></a>
+    <a href="#profile">
+      <span data-lang="es">Perfil</span>
+      <span data-lang="en">Profile</span>
+    </a>
+
+    <a href="#competencies">
+      <span data-lang="es">Competencias</span>
+      <span data-lang="en">Competencies</span>
+    </a>
+
+    <a href="#news">
+      <span data-lang="es">Noticias</span>
+      <span data-lang="en">News</span>
+    </a>
+
+    <a href="#experience">
+      <span data-lang="es">Experiencia</span>
+      <span data-lang="en">Experience</span>
+    </a>
+
+    <a href="#education">
+      <span data-lang="es">Formación</span>
+      <span data-lang="en">Education</span>
+    </a>
+
+    <a href="#publications">
+      <span data-lang="es">Publicaciones</span>
+      <span data-lang="en">Publications</span>
+    </a>
+
+    <a href="#contact">
+      <span data-lang="es">Contacto</span>
+      <span data-lang="en">Contact</span>
+    </a>
   </nav>
 </div>
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
   <div class="hero__inner">
+
     <div class="hero__identity">
       <div class="hero__avatar">
         <img src="foto.jpg" alt="Israel David Duarte Herrera">
       </div>
+
       <div class="hero__intro">
         <p class="eyebrow">
           <span data-lang="es">Naturalismo y trabajo de campo</span>
-          <span data-lang="en">Naturalism &amp; fieldwork</span>
+          <span data-lang="en">Naturalism & fieldwork</span>
         </p>
-        <h1 class="hero__title">Israel David<br>Duarte Herrera</h1>
+
+        <h1 class="hero__title">
+          Israel David<br>Duarte Herrera
+        </h1>
+
         <p class="hero__role">
-          <span data-lang="es">Meteorología y Climatología <span class="hero__dot">·</span> Biología marina y pesquera <span class="hero__dot">·</span> Trabajo de campo</span>
-          <span data-lang="en">Meteorology &amp; Climatology <span class="hero__dot">·</span> Marine &amp; Fisheries Biology <span class="hero__dot">·</span> Fieldwork</span>
+          <span data-lang="es">
+            Meteorología y Climatología
+            <span class="hero__dot">·</span>
+            Biología marina y pesquera
+            <span class="hero__dot">·</span>
+            Trabajo de campo
+          </span>
+
+          <span data-lang="en">
+            Meteorology & Climatology
+            <span class="hero__dot">·</span>
+            Marine & Fisheries Biology
+            <span class="hero__dot">·</span>
+            Fieldwork
+          </span>
         </p>
       </div>
     </div>
 
-    <p class="hero__tagline" data-lang="es">Biólogo con experiencia en observación científica a bordo de buques pesqueros y muestreo biológico. He complementado mi formación con experiencia en bioinformática y análisis de datos, y me preparo para ser observador meteorológico del Estado.</p>
-    <p class="hero__tagline" data-lang="en">Biologist with experience in scientific observation aboard fishing vessels and biological sampling. I have complemented my training with experience in bioinformatics and data analysis, and I am preparing to become a State meteorological observer.</p>
+    <p class="hero__tagline" data-lang="es">
+      Biólogo con experiencia en observación científica a bordo de buques pesqueros y muestreo biológico. He complementado mi formación con experiencia en bioinformática y análisis de datos, y me preparo para ser observador meteorológico del Estado.
+    </p>
+
+    <p class="hero__tagline" data-lang="en">
+      Biologist with experience in scientific observation aboard fishing vessels and biological sampling. I have complemented my training with experience in bioinformatics and data analysis, and I am preparing to become a State meteorological observer.
+    </p>
 
     <div class="hero__cta">
-      <a class="btn btn--primary" href="#news"><span data-lang="es">Ver noticias</span><span data-lang="en">Read the news</span></a>
-      <a class="btn btn--ghost" href="blog.html"><span data-lang="es">Todas las noticias</span><span data-lang="en">All news</span></a>
-      <a class="btn btn--ghost" href="#contact"><span data-lang="es">Contacto</span><span data-lang="en">Get in touch</span></a>
+      <a class="btn btn--primary" href="#news">
+        <span data-lang="es">Ver noticias</span>
+        <span data-lang="en">Read the news</span>
+      </a>
+
+      <a class="btn btn--ghost" href="blog.html">
+        <span data-lang="es">Todas las noticias</span>
+        <span data-lang="en">All news</span>
+      </a>
+
+      <a class="btn btn--ghost" href="#contact">
+        <span data-lang="es">Contacto</span>
+        <span data-lang="en">Get in touch</span>
+      </a>
     </div>
+
   </div>
 </section>
 
 <!-- ============ PROFILE ============ -->
 <section class="section" id="profile">
+
   <div class="section__head">
     <span class="section__num">§1</span>
-    <h2><span data-lang="es">Perfil</span><span data-lang="en">Profile</span></h2>
+    <h2>
+      <span data-lang="es">Perfil</span>
+      <span data-lang="en">Profile</span>
+    </h2>
   </div>
 
   <div class="hero__grid">
+
     <div class="hero__abstract">
-      <span class="hero__label"><span data-lang="es">Resumen</span><span data-lang="en">Abstract</span></span>
 
-      <p class="drop-cap" data-lang="es">Biólogo formado en la Universidad de La Laguna, con trabajo de campo como observador científico en buques pesqueros y como asistente de investigación en el estudio de macrofauna y zooplancton. Mi trayectoria se ha movido siempre entre el mar, el dato y el informe riguroso.</p>
-      <p class="drop-cap" data-lang="en">Biologist trained at the University of La Laguna, with fieldwork as a scientific observer aboard fishing vessels and as a research assistant studying macrofauna and zooplankton. My career has always moved between the sea, the data and the rigorous report.</p>
+      <span class="hero__label">
+        <span data-lang="es">Resumen</span>
+        <span data-lang="en">Abstract</span>
+      </span>
 
-      <p data-lang="es">Además del campo, he trabajado varios años en bioinformática, análisis estadístico de datos y auditoría de sostenibilidad. Soy coautor de ocho publicaciones revisadas por pares y he revisado cuatro manuscritos para revistas internacionales.<sup class="cite"><a href="#pub-list">1</a></sup></p>
-      <p data-lang="en">Beyond fieldwork, I have spent several years in bioinformatics, statistical data analysis and sustainability auditing. I am co-author of eight peer-reviewed publications and have reviewed four manuscripts for international journals.<sup class="cite"><a href="#pub-list">1</a></sup></p>
+      <p class="drop-cap" data-lang="es">
+        Biólogo formado en la Universidad de La Laguna, con trabajo de campo como observador científico en buques pesqueros y como asistente de investigación en el estudio de macrofauna y zooplancton. Mi trayectoria se ha movido siempre entre el mar, el dato y el informe riguroso.
+      </p>
+
+      <p class="drop-cap" data-lang="en">
+        Biologist trained at the University of La Laguna, with fieldwork as a scientific observer aboard fishing vessels and as a research assistant studying macrofauna and zooplankton. My career has always moved between the sea, the data and the rigorous report.
+      </p>
+
+      <p data-lang="es">
+        Además del campo, he trabajado varios años en bioinformática, análisis estadístico de datos y auditoría de sostenibilidad. Soy coautor de ocho publicaciones revisadas por pares y he revisado cuatro manuscritos para revistas internacionales.
+        <sup class="cite"><a href="#pub-list">1</a></sup>
+      </p>
+
+      <p data-lang="en">
+        Beyond fieldwork, I have spent several years in bioinformatics, statistical data analysis and sustainability auditing. I am co-author of eight peer-reviewed publications and have reviewed four manuscripts for international journals.
+        <sup class="cite"><a href="#pub-list">1</a></sup>
+      </p>
+
     </div>
 
     <aside class="hero__margin" aria-label="Key figures">
+
       <div class="marginnote marginnote--pen">
         <span class="marginnote__num">4</span>
         <span class="marginnote__label">
-          <span data-lang="es">campañas como observador pesquero (2015–2018), en 3 artes de pesca distintas</span>
-          <span data-lang="en">campaigns as a fishery observer (2015–2018), across 3 different fishing gears</span>
+          <span data-lang="es">
+            campañas como observador pesquero (2015–2018), en 3 artes de pesca distintas
+          </span>
+          <span data-lang="en">
+            campaigns as a fishery observer (2015–2018), across 3 different fishing gears
+          </span>
         </span>
       </div>
+
       <div class="marginnote">
         <span class="marginnote__num">8</span>
         <span class="marginnote__label">
@@ -120,13 +245,15 @@
           <span data-lang="en">peer-reviewed publications</span>
         </span>
       </div>
+
       <div class="marginnote">
         <span class="marginnote__num">4</span>
         <span class="marginnote__label">
-        <span data-lang="es">Revisiones en revistas indexadas de alto impacto</span>
-        <span data-lang="en">Peer reviews for high-impact indexed journals</span>
-      </span>
+          <span data-lang="es">Revisiones en revistas indexadas de alto impacto</span>
+          <span data-lang="en">Peer reviews for high-impact indexed journals</span>
+        </span>
       </div>
+
       <div class="marginnote">
         <span class="marginnote__num">3</span>
         <span class="marginnote__label">
@@ -134,20 +261,31 @@
           <span data-lang="en">working languages</span>
         </span>
       </div>
+
     </aside>
+
   </div>
 </section>
 
 <!-- ============ COMPETENCIES ============ -->
 <section class="section" id="competencies">
+
   <div class="section__head">
     <span class="section__num">§2</span>
-    <h2><span data-lang="es">Competencias</span><span data-lang="en">Core Competencies</span></h2>
+    <h2>
+      <span data-lang="es">Competencias</span>
+      <span data-lang="en">Core Competencies</span>
+    </h2>
   </div>
 
   <div class="comp-grid">
+
     <div class="comp-card">
-      <span class="comp-card__label"><span data-lang="es">Biología marina y animal</span><span data-lang="en">Marine &amp; Animal Biology</span></span>
+      <span class="comp-card__label">
+        <span data-lang="es">Biología marina y animal</span>
+        <span data-lang="en">Marine & Animal Biology</span>
+      </span>
+
       <ul data-lang="es">
         <li>Macrofauna marina</li>
         <li>Identificación de zooplancton</li>
@@ -155,6 +293,7 @@
         <li>Pesquerías</li>
         <li>Catalogación biológica</li>
       </ul>
+
       <ul data-lang="en">
         <li>Marine macrofauna</li>
         <li>Zooplankton identification</li>
@@ -165,7 +304,11 @@
     </div>
 
     <div class="comp-card">
-      <span class="comp-card__label"><span data-lang="es">Trabajo de campo</span><span data-lang="en">Fieldwork</span></span>
+      <span class="comp-card__label">
+        <span data-lang="es">Trabajo de campo</span>
+        <span data-lang="en">Fieldwork</span>
+      </span>
+
       <ul data-lang="es">
         <li>Observación a bordo</li>
         <li>Muestreo biológico</li>
@@ -173,17 +316,22 @@
         <li>Protocolos científicos</li>
         <li>Registro y verificación</li>
       </ul>
+
       <ul data-lang="en">
         <li>Onboard observation</li>
         <li>Biological sampling</li>
         <li>Morphometric data</li>
         <li>Scientific protocols</li>
-        <li>Recording &amp; verification</li>
+        <li>Recording & verification</li>
       </ul>
     </div>
 
     <div class="comp-card">
-      <span class="comp-card__label"><span data-lang="es">Datos y análisis</span><span data-lang="en">Data &amp; Analysis</span></span>
+      <span class="comp-card__label">
+        <span data-lang="es">Datos y análisis</span>
+        <span data-lang="en">Data & Analysis</span>
+      </span>
+
       <ul data-lang="es">
         <li>Bioestadística</li>
         <li>Bioinformática</li>
@@ -191,6 +339,7 @@
         <li>Visualización</li>
         <li>Informes técnicos</li>
       </ul>
+
       <ul data-lang="en">
         <li>Biostatistics</li>
         <li>Bioinformatics</li>
@@ -201,13 +350,18 @@
     </div>
 
     <div class="comp-card">
-      <span class="comp-card__label"><span data-lang="es">Meteorología (en formación)</span><span data-lang="en">Meteorology (in training)</span></span>
+      <span class="comp-card__label">
+        <span data-lang="es">Meteorología (en formación)</span>
+        <span data-lang="en">Meteorology (in training)</span>
+      </span>
+
       <ul data-lang="es">
         <li>Observación meteorológica</li>
         <li>Instrumentación</li>
         <li>Ciencias de la atmósfera</li>
         <li>Climatología</li>
       </ul>
+
       <ul data-lang="en">
         <li>Weather observation</li>
         <li>Instrumentation</li>
@@ -215,216 +369,405 @@
         <li>Climatology</li>
       </ul>
     </div>
+
   </div>
 
   <div class="lang-strip">
-    <span class="lang-strip__label"><span data-lang="es">Idiomas</span><span data-lang="en">Languages</span></span>
-    <span class="lang-item"><span data-lang="es">Español</span><span data-lang="en">Spanish</span> <em><span data-lang="es">Nativo</span><span data-lang="en">Native</span></em></span>
+    <span class="lang-strip__label">
+      <span data-lang="es">Idiomas</span>
+      <span data-lang="en">Languages</span>
+    </span>
+
+    <span class="lang-item">
+      <span data-lang="es">Español</span>
+      <span data-lang="en">Spanish</span>
+      <em>
+        <span data-lang="es">Nativo</span>
+        <span data-lang="en">Native</span>
+      </em>
+    </span>
+
     <span class="lang-sep">·</span>
-    <span class="lang-item"><span data-lang="es">Inglés</span><span data-lang="en">English</span> <em>B2</em></span>
+
+    <span class="lang-item">
+      <span data-lang="es">Inglés</span>
+      <span data-lang="en">English</span>
+      <em>B2</em>
+    </span>
+
     <span class="lang-sep">·</span>
-    <span class="lang-item"><span data-lang="es">Portugués</span><span data-lang="en">Portuguese</span> <em>B2</em></span>
+
+    <span class="lang-item">
+      <span data-lang="es">Portugués</span>
+      <span data-lang="en">Portuguese</span>
+      <em>B2</em>
+    </span>
   </div>
+
 </section>
 
 <!-- ============ NEWS / BLOG ============ -->
 <section class="section" id="news">
+
   <div class="section__head">
     <span class="section__num">§3</span>
-    <h2><span data-lang="es">Noticias</span><span data-lang="en">News</span></h2>
+    <h2>
+      <span data-lang="es">Noticias</span>
+      <span data-lang="en">News</span>
+    </h2>
   </div>
 
-  <p class="section__note" data-lang="es">Biología marina, fauna, pesquerías y meteorología. Selección personal, con enlace a la fuente original.</p>
-  <p class="section__note" data-lang="en">Marine biology, wildlife, fisheries and meteorology. A personal selection, linked to the original source.</p>
+  <p class="section__note" data-lang="es">
+    Biología marina, fauna, pesquerías y meteorología. Selección personal, con enlace a la fuente original.
+  </p>
+
+  <p class="section__note" data-lang="en">
+    Marine biology, wildlife, fisheries and meteorology. A personal selection, linked to the original source.
+  </p>
 
   <div class="post-list" id="postList" data-limit="3"></div>
 
   <p class="section__more">
-    <a href="blog.html"><span data-lang="es">Ver todas las noticias ↗</span><span data-lang="en">See all news ↗</span></a>
+    <a href="blog.html">
+      <span data-lang="es">Ver todas las noticias ↗</span>
+      <span data-lang="en">See all news ↗</span>
+    </a>
   </p>
+
 </section>
 
 <!-- ============ EXPERIENCE ============ -->
 <section class="section" id="experience">
+
   <div class="section__head">
     <span class="section__num">§4</span>
-    <h2><span data-lang="es">Experiencia</span><span data-lang="en">Experience</span></h2>
+    <h2>
+      <span data-lang="es">Experiencia</span>
+      <span data-lang="en">Experience</span>
+    </h2>
   </div>
 
-  <h3 class="timeline__label timeline__label--sea"><span data-lang="es">En el mar</span><span data-lang="en">At sea &amp; marine biology</span></h3>
+  <h3 class="timeline__label timeline__label--sea">
+    <span data-lang="es">En el mar</span>
+    <span data-lang="en">At sea & marine biology</span>
+  </h3>
+
   <ol class="timeline">
+
     <li class="entry entry--sea">
       <div class="entry__date">08/2018 — 11/2018</div>
+
       <div class="entry__body">
-        <h3><span data-lang="es">Observador pesquero</span><span data-lang="en">Fishery Observer</span></h3>
-        <p class="entry__org">Asociación Nacional de Armadores de Buques Palangreros</p>
+        <h3>
+          <span data-lang="es">Observador pesquero</span>
+          <span data-lang="en">Fishery Observer</span>
+        </h3>
+
+        <p class="entry__org">
+          Asociación Nacional de Armadores de Buques Palangreros
+        </p>
+
         <ul data-lang="es">
           <li>Observación científica y recogida de datos biológicos a bordo siguiendo protocolos estandarizados.</li>
           <li>Registro y verificación de la información para el seguimiento de la actividad pesquera.</li>
         </ul>
+
         <ul data-lang="en">
           <li>Scientific observation and biological data collection on board following standardised protocols.</li>
           <li>Recording and verification of information for fisheries monitoring.</li>
         </ul>
-        <span class="entry__tag"><span data-lang="es">Trabajo de campo · Pesquerías</span><span data-lang="en">Fieldwork · Fisheries</span></span>
+
+        <span class="entry__tag">
+          <span data-lang="es">Trabajo de campo · Pesquerías</span>
+          <span data-lang="en">Fieldwork · Fisheries</span>
+        </span>
       </div>
     </li>
+
     <li class="entry entry--sea">
       <div class="entry__date">07/2017 — 10/2017</div>
+
       <div class="entry__body">
-        <h3><span data-lang="es">Observador pesquero</span><span data-lang="en">Fishery Observer</span></h3>
-        <p class="entry__org">Investigación, Planificación y Desarrollo S.A. </p>
+        <h3>
+          <span data-lang="es">Observador pesquero</span>
+          <span data-lang="en">Fishery Observer</span>
+        </h3>
+
+        <p class="entry__org">
+          Investigación, Planificación y Desarrollo S.A.
+        </p>
+
         <ul data-lang="es">
           <li>Muestreo biológico y toma de datos morfométricos a bordo de buques pesqueros comerciales.</li>
           <li>Mantenimiento y verificación de datos para programas de seguimiento pesquero y evaluación de poblaciones.</li>
         </ul>
+
         <ul data-lang="en">
           <li>Biological sampling and morphometric data collection aboard commercial fishing vessels.</li>
           <li>Maintenance and verification of data for fisheries monitoring and population assessment programmes.</li>
         </ul>
-        <span class="entry__tag"><span data-lang="es">Trabajo de campo · Pesquerías</span><span data-lang="en">Fieldwork · Fisheries</span></span>
+
+        <span class="entry__tag">
+          <span data-lang="es">Trabajo de campo · Pesquerías</span>
+          <span data-lang="en">Fieldwork · Fisheries</span>
+        </span>
       </div>
     </li>
+
     <li class="entry entry--sea">
       <div class="entry__date">01/2016 — 05/2016</div>
+
       <div class="entry__body">
-        <h3><span data-lang="es">Observador pesquero</span><span data-lang="en">Fishery Observer</span></h3>
-        <p class="entry__org">Investigación, Planificación y Desarrollo S.A.</p>
+        <h3>
+          <span data-lang="es">Observador pesquero</span>
+          <span data-lang="en">Fishery Observer</span>
+        </h3>
+
+        <p class="entry__org">
+          Investigación, Planificación y Desarrollo S.A.
+        </p>
+
         <ul data-lang="es">
           <li>Trabajo de campo en el mar: muestreo biológico según protocolo científico.</li>
           <li>Registro de datos con control de calidad y precisión.</li>
         </ul>
+
         <ul data-lang="en">
           <li>Fieldwork at sea: biological sampling following scientific protocol.</li>
           <li>Data recording with quality control and accuracy.</li>
         </ul>
-        <span class="entry__tag"><span data-lang="es">Trabajo de campo · Pesquerías</span><span data-lang="en">Fieldwork · Fisheries</span></span>
+
+        <span class="entry__tag">
+          <span data-lang="es">Trabajo de campo · Pesquerías</span>
+          <span data-lang="en">Fieldwork · Fisheries</span>
+        </span>
       </div>
     </li>
+
     <li class="entry entry--sea">
       <div class="entry__date">04/2015 — 09/2015</div>
+
       <div class="entry__body">
-        <h3><span data-lang="es">Observador pesquero</span><span data-lang="en">Fishery Observer</span></h3>
-        <p class="entry__org">Investigación, Planificación y Desarrollo S.A.</p>
+        <h3>
+          <span data-lang="es">Observador pesquero</span>
+          <span data-lang="en">Fishery Observer</span>
+        </h3>
+
+        <p class="entry__org">
+          Investigación, Planificación y Desarrollo S.A.
+        </p>
+
         <ul data-lang="es">
           <li>Inicio de la actividad como observador científico en buques pesqueros comerciales.</li>
           <li>Recogida de datos biológicos y morfométricos siguiendo protocolos estandarizados.</li>
         </ul>
+
         <ul data-lang="en">
           <li>Start of activity as a scientific observer on commercial fishing vessels.</li>
           <li>Collection of biological and morphometric data following standardised protocols.</li>
         </ul>
-        <span class="entry__tag"><span data-lang="es">Trabajo de campo · Pesquerías</span><span data-lang="en">Fieldwork · Fisheries</span></span>
+
+        <span class="entry__tag">
+          <span data-lang="es">Trabajo de campo · Pesquerías</span>
+          <span data-lang="en">Fieldwork · Fisheries</span>
+        </span>
       </div>
     </li>
+
     <li class="entry entry--sea">
       <div class="entry__date">02/2013 — 07/2013</div>
+
       <div class="entry__body">
-        <h3><span data-lang="es">Asistente de investigación</span><span data-lang="en">Research Assistant</span></h3>
-        <p class="entry__org">Museo de la Naturaleza y el Hombre de Santa Cruz de Tenerife</p>
+        <h3>
+          <span data-lang="es">Asistente de investigación</span>
+          <span data-lang="en">Research Assistant</span>
+        </h3>
+
+        <p class="entry__org">
+          Museo de la Naturaleza y el Hombre de Santa Cruz de Tenerife
+        </p>
+
         <ul data-lang="es">
           <li>Catalogación de macrofauna e identificación de zooplancton en proyectos de seguimiento de la biodiversidad.</li>
           <li>Recogida, clasificación y documentación de información biológica.</li>
         </ul>
+
         <ul data-lang="en">
           <li>Macrofauna cataloguing and zooplankton identification in biodiversity monitoring projects.</li>
           <li>Collection, classification and documentation of biological information.</li>
         </ul>
-        <span class="entry__tag"><span data-lang="es">Biodiversidad marina · Documentación</span><span data-lang="en">Marine Biodiversity · Documentation</span></span>
+
+        <span class="entry__tag">
+          <span data-lang="es">Biodiversidad marina · Documentación</span>
+          <span data-lang="en">Marine Biodiversity · Documentation</span>
+        </span>
       </div>
     </li>
+
   </ol>
 
-  <h3 class="timeline__label"><span data-lang="es">Investigación y consultoría</span><span data-lang="en">Research &amp; consulting</span></h3>
+  <h3 class="timeline__label">
+    <span data-lang="es">Investigación y consultoría</span>
+    <span data-lang="en">Research & consulting</span>
+  </h3>
+
   <ol class="timeline">
+
     <li class="entry">
       <div class="entry__date">10/2022 — 08/2026</div>
+
       <div class="entry__body">
-        <h3><span data-lang="es">Bioinformático</span><span data-lang="en">Bioinformatician</span></h3>
-        <p class="entry__org">CIBER — Centro de Investigación Biomédica en Red</p>
+        <h3>
+          <span data-lang="es">Bioinformático</span>
+          <span data-lang="en">Bioinformatician</span>
+        </h3>
+
+        <p class="entry__org">
+          CIBER — Centro de Investigación Biomédica en Red
+        </p>
+
         <ul data-lang="es">
           <li>Análisis bioinformático de datos clínicos y multi-ómicos en proyectos de investigación traslacional.</li>
           <li>Flujos de trabajo analíticos reproducibles y preparación de manuscritos científicos.</li>
           <li>Colaboración con clínicos, epidemiólogos y equipos multidisciplinares.</li>
         </ul>
+
         <ul data-lang="en">
           <li>Bioinformatic analysis of clinical and multi-omic data in translational research projects.</li>
           <li>Reproducible analytical workflows and preparation of scientific manuscripts.</li>
           <li>Collaboration with clinicians, epidemiologists and multidisciplinary teams.</li>
         </ul>
-        <span class="entry__tag"><span data-lang="es">Bioinformática · Análisis de datos</span><span data-lang="en">Bioinformatics · Data Analysis</span></span>
+
+        <span class="entry__tag">
+          <span data-lang="es">Bioinformática · Análisis de datos</span>
+          <span data-lang="en">Bioinformatics · Data Analysis</span>
+        </span>
       </div>
     </li>
+
     <li class="entry">
       <div class="entry__date">03/2021 — 01/2022</div>
+
       <div class="entry__body">
-        <h3><span data-lang="es">Becario de bioinformática</span><span data-lang="en">Bioinformatics Intern</span></h3>
-        <p class="entry__org">Hospital Universitario Central de Asturias (HUCA)</p>
+        <h3>
+          <span data-lang="es">Becario de bioinformática</span>
+          <span data-lang="en">Bioinformatics Intern</span>
+        </h3>
+
+        <p class="entry__org">
+          Hospital Universitario Central de Asturias (HUCA)
+        </p>
+
         <ul data-lang="es">
           <li>Procesamiento bioinformático y análisis estadístico de conjuntos de datos ómicos.</li>
           <li>Control de calidad del dato y apoyo a la interpretación de resultados.</li>
         </ul>
+
         <ul data-lang="en">
           <li>Bioinformatic processing and statistical analysis of omics datasets.</li>
           <li>Data quality control and support in interpreting results.</li>
         </ul>
-        <span class="entry__tag"><span data-lang="es">Bioinformática · Bioestadística</span><span data-lang="en">Bioinformatics · Biostatistics</span></span>
+
+        <span class="entry__tag">
+          <span data-lang="es">Bioinformática · Bioestadística</span>
+          <span data-lang="en">Bioinformatics · Biostatistics</span>
+        </span>
       </div>
     </li>
+
     <li class="entry">
       <div class="entry__date">10/2019 — 10/2022</div>
+
       <div class="entry__body">
-        <h3><span data-lang="es">Auditor de sostenibilidad</span><span data-lang="en">Sustainability Auditor</span></h3>
-        <p class="entry__org"><span data-lang="es">Travelife for Accommodation — Autónomo</span><span data-lang="en">Travelife for Accommodation — Self-employed, London</span></p>
+        <h3>
+          <span data-lang="es">Auditor de sostenibilidad</span>
+          <span data-lang="en">Sustainability Auditor</span>
+        </h3>
+
+        <p class="entry__org">
+          <span data-lang="es">Travelife for Accommodation — Autónomo</span>
+          <span data-lang="en">Travelife for Accommodation — Self-employed, London</span>
+        </p>
+
         <ul data-lang="es">
           <li>Auditorías independientes según estándares internacionales de sostenibilidad.</li>
           <li>Revisión de documentación y evidencias, y redacción de informes técnicos estructurados.</li>
         </ul>
+
         <ul data-lang="en">
           <li>Independent audits against international sustainability standards.</li>
           <li>Review of documentation and evidence, and preparation of structured technical reports.</li>
         </ul>
-        <span class="entry__tag"><span data-lang="es">Auditoría · Informes técnicos</span><span data-lang="en">Auditing · Technical Reporting</span></span>
+
+        <span class="entry__tag">
+          <span data-lang="es">Auditoría · Informes técnicos</span>
+          <span data-lang="en">Auditing · Technical Reporting</span>
+        </span>
       </div>
     </li>
+
     <li class="entry">
       <div class="entry__date">02/2019 — 08/2019</div>
+
       <div class="entry__body">
-        <h3><span data-lang="es">Consultor de seguridad alimentaria e higiene</span><span data-lang="en">Food Safety and Hygiene Consultant</span></h3>
-        <p class="entry__org">Biolab Siete Mares | Preverisk Group</p>
+        <h3>
+          <span data-lang="es">Consultor de seguridad alimentaria e higiene</span>
+          <span data-lang="en">Food Safety and Hygiene Consultant</span>
+        </h3>
+
+        <p class="entry__org">
+          Biolab Siete Mares | Preverisk Group
+        </p>
+
         <ul data-lang="es">
           <li>Implantación de sistemas de seguridad alimentaria y gestión del agua conforme a la normativa sanitaria y ambiental.</li>
           <li>Documentación técnica e informes de cumplimiento normativo.</li>
         </ul>
+
         <ul data-lang="en">
           <li>Implementation of food safety and water management systems in line with health and environmental regulations.</li>
           <li>Technical documentation and compliance reports.</li>
         </ul>
-        <span class="entry__tag"><span data-lang="es">Cumplimiento · Medio ambiente</span><span data-lang="en">Compliance · Environment</span></span>
+
+        <span class="entry__tag">
+          <span data-lang="es">Cumplimiento · Medio ambiente</span>
+          <span data-lang="en">Compliance · Environment</span>
+        </span>
       </div>
     </li>
+
   </ol>
+
 </section>
 
 <!-- ============ EDUCATION ============ -->
 <section class="section" id="education">
+
   <div class="section__head">
     <span class="section__num">§5</span>
-    <h2><span data-lang="es">Formación</span><span data-lang="en">Education</span></h2>
+
+    <h2>
+      <span data-lang="es">Formación</span>
+      <span data-lang="en">Education</span>
+    </h2>
   </div>
 
   <ol class="timeline timeline--compact">
+
     <li class="entry">
       <div class="entry__date">2026 — 2030</div>
+
       <div class="entry__body">
         <h3>
           <span data-lang="es">Doctorado en Ciencias Biomédicas y Salud Pública (en curso)</span>
-          <span data-lang="en">PhD in Biomedical Sciences &amp; Public Health (ongoing)</span>
+          <span data-lang="en">PhD in Biomedical Sciences & Public Health (ongoing)</span>
         </h3>
+
         <p class="entry__org">
           <span data-lang="es">Universidad Nacional de Educación a Distancia (UNED)</span>
           <span data-lang="en">National University of Distance Education (UNED)</span>
         </p>
+
         <p class="entry__description">
           <span data-lang="es">Investigación en salud ambiental, exposoma y ciencia de datos aplicada a exposiciones ambientales.</span>
           <span data-lang="en">Research in environmental health, exposome, and data science applied to environmental exposures.</span>
@@ -434,12 +777,17 @@
 
     <li class="entry">
       <div class="entry__date">2020 — 2022</div>
+
       <div class="entry__body">
         <h3>
           <span data-lang="es">Máster en Bioinformática y Bioestadística</span>
-          <span data-lang="en">MSc in Bioinformatics &amp; Biostatistics</span>
+          <span data-lang="en">MSc in Bioinformatics & Biostatistics</span>
         </h3>
-        <p class="entry__org">Universitat Oberta de Catalunya</p>
+
+        <p class="entry__org">
+          Universitat Oberta de Catalunya
+        </p>
+
         <p class="entry__description">
           <span data-lang="es">Formación en bioinformática, bioestadística y análisis cuantitativo de datos biológicos.</span>
           <span data-lang="en">Training in bioinformatics, biostatistics, and quantitative analysis of biological data.</span>
@@ -449,91 +797,244 @@
 
     <li class="entry">
       <div class="entry__date">2006 — 2013</div>
+
       <div class="entry__body">
         <h3>
           <span data-lang="es">Grado en Biología</span>
           <span data-lang="en">BSc in Biology</span>
         </h3>
+
         <p class="entry__org">
           <span data-lang="es">Universidad de La Laguna</span>
           <span data-lang="en">University of La Laguna</span>
         </p>
+
         <p class="entry__description">
           <span data-lang="es">Formación en biología, con especialización en Biología Marina y Biología Animal.</span>
           <span data-lang="en">Training in biology, with specialisation in Marine Biology and Animal Biology.</span>
         </p>
       </div>
     </li>
+
   </ol>
+
 </section>
 
 <!-- ============ PUBLICATIONS ============ -->
 <section class="section" id="publications">
+
   <div class="section__head">
     <span class="section__num">§6</span>
-    <h2><span data-lang="es">Publicaciones</span><span data-lang="en">Publications</span></h2>
+
+    <h2>
+      <span data-lang="es">Publicaciones</span>
+      <span data-lang="en">Publications</span>
+    </h2>
   </div>
 
-  <p class="section__note" data-lang="es">Ocho publicaciones revisadas por pares, una como primer autor. <a href="https://orcid.org/0000-0001-5427-6019" target="_blank" rel="noopener">ORCID</a></p>
-  <p class="section__note" data-lang="en">Eight peer-reviewed publications, including one as first author. <a href="https://orcid.org/0000-0001-5427-6019" target="_blank" rel="noopener">ORCID</a></p>
+  <p class="section__note" data-lang="es">
+    Ocho publicaciones revisadas por pares, una como primer autor.
+    <a
+      href="https://orcid.org/0000-0001-5427-6019"
+      target="_blank"
+      rel="noopener"
+    >ORCID</a>
+  </p>
+
+  <p class="section__note" data-lang="en">
+    Eight peer-reviewed publications, including one as first author.
+    <a
+      href="https://orcid.org/0000-0001-5427-6019"
+      target="_blank"
+      rel="noopener"
+    >ORCID</a>
+  </p>
 
   <ol class="ref-list" id="pub-list">
+
     <li id="ref-1">
-      <p>Duarte-Herrera, I. D., López-Martínez, C., Rodríguez-García, R., Parra, D., Martín-Vicente, P., Exojo-Ramirez, S. M., Miravete-Lagunes, K., Iglesias, L., González-Iglesias, M., Fernández-Rodríguez, M., et al. (2024). Identification of host endotypes using peripheral blood transcriptomics in a prospective cohort of patients with endocarditis. <em>International Journal of Infectious Diseases.</em> <a href="https://doi.org/10.1016/j.ijid.2024.107235" target="_blank" rel="noopener">doi.org/10.1016/j.ijid.2024.107235</a></p>
-      <p class="pub-highlight" data-lang="es">Publicación como primer autor. Destacada por Physician's Weekly (2024).</p>
-      <p class="pub-highlight" data-lang="en">First-author publication. Featured by Physician's Weekly (2024).</p>
+      <p>
+        Duarte-Herrera, I. D., López-Martínez, C., Rodríguez-García, R., Parra, D., Martín-Vicente, P., Exojo-Ramirez, S. M., Miravete-Lagunes, K., Iglesias, L., González-Iglesias, M., Fernández-Rodríguez, M., et al. (2024).
+        Identification of host endotypes using peripheral blood transcriptomics in a prospective cohort of patients with endocarditis.
+        <em>International Journal of Infectious Diseases.</em>
+        <a
+          href="https://doi.org/10.1016/j.ijid.2024.107235"
+          target="_blank"
+          rel="noopener"
+        >doi.org/10.1016/j.ijid.2024.107235</a>
+      </p>
+
+      <p class="pub-highlight" data-lang="es">
+        Publicación como primer autor. Destacada por Physician's Weekly (2024).
+      </p>
+
+      <p class="pub-highlight" data-lang="en">
+        First-author publication. Featured by Physician's Weekly (2024).
+      </p>
     </li>
+
     <li id="ref-2">
-      <p>Exojo-Ramírez, S. M., Duarte-Herrera, I. D., Martín-Vicente, P., López-Martínez, C., Miravete-Lagunes, K., Ordoñez, I., Parra, D., Gómez, J., Campo Ortiz de Zárate, N. &amp; Chacón, M., et al. (2026). The role of PPIA gene in lung repair during mechanical ventilation. <em>Open Respiratory Archives.</em> <a href="https://doi.org/10.1016/j.opresp.2026.100564" target="_blank" rel="noopener">doi.org/10.1016/j.opresp.2026.100564</a></p>
+      <p>
+        Exojo-Ramírez, S. M., Duarte-Herrera, I. D., Martín-Vicente, P., López-Martínez, C., Miravete-Lagunes, K., Ordoñez, I., Parra, D., Gómez, J., Campo Ortiz de Zárate, N. & Chacón, M., et al. (2026).
+        The role of PPIA gene in lung repair during mechanical ventilation.
+        <em>Open Respiratory Archives.</em>
+        <a
+          href="https://doi.org/10.1016/j.opresp.2026.100564"
+          target="_blank"
+          rel="noopener"
+        >doi.org/10.1016/j.opresp.2026.100564</a>
+      </p>
     </li>
+
     <li id="ref-3">
-      <p>Pérez-Oliveira, S., Alvarez, I., Menendez-Gonzalez, M., Duarte-Herrera, I. D., Blázquez-Estrada, M., Castilla-Silgado, J., Suárez, E., García-Fernández, C., Siso-García, P., García-González, P., et al. (2024). HTT, ATXN1 and ATXN2 CAG triplet repeat sizes: Exploring their role in disease risk and cancer comorbidity in Parkinson's disease. <em>Brain Communications.</em> <a href="https://doi.org/10.1093/braincomms/fcaf060" target="_blank" rel="noopener">doi.org/10.1093/braincomms/fcaf060</a></p>
+      <p>
+        Pérez-Oliveira, S., Alvarez, I., Menendez-Gonzalez, M., Duarte-Herrera, I. D., Blázquez-Estrada, M., Castilla-Silgado, J., Suárez, E., García-Fernández, C., Siso-García, P., García-González, P., et al. (2024).
+        HTT, ATXN1 and ATXN2 CAG triplet repeat sizes: Exploring their role in disease risk and cancer comorbidity in Parkinson's disease.
+        <em>Brain Communications.</em>
+        <a
+          href="https://doi.org/10.1093/braincomms/fcaf060"
+          target="_blank"
+          rel="noopener"
+        >doi.org/10.1093/braincomms/fcaf060</a>
+      </p>
     </li>
+
     <li id="ref-4">
-      <p>Martín-Vicente, P., López-Martínez, C., López-Alonso, I., Exojo-Ramírez, S. M., Duarte-Herrera, I. D., Amado-Rodríguez, L., Ordoñez, I., Cuesta-Llavona, E., Gómez, J., Campo, N., et al. (2024). Mechanical stretch induces senescence of lung epithelial cells and drives fibroblast activation by paracrine mechanisms. <em>American Journal of Respiratory Cell and Molecular Biology.</em> <a href="https://doi.org/10.1165/rcmb.2023-0449oc" target="_blank" rel="noopener">doi.org/10.1165/rcmb.2023-0449oc</a></p>
+      <p>
+        Martín-Vicente, P., López-Martínez, C., López-Alonso, I., Exojo-Ramírez, S. M., Duarte-Herrera, I. D., Amado-Rodríguez, L., Ordoñez, I., Cuesta-Llavona, E., Gómez, J., Campo, N., et al. (2024).
+        Mechanical stretch induces senescence of lung epithelial cells and drives fibroblast activation by paracrine mechanisms.
+        <em>American Journal of Respiratory Cell and Molecular Biology.</em>
+        <a
+          href="https://doi.org/10.1165/rcmb.2023-0449oc"
+          target="_blank"
+          rel="noopener"
+        >doi.org/10.1165/rcmb.2023-0449oc</a>
+      </p>
     </li>
+
     <li id="ref-5">
-      <p>Pérez-Oliveira, S., Álvarez, I., Rosas, I., et al. (2022). Intermediate and expanded HTT alleles and the risk for α-synucleinopathies. <em>Movement Disorders.</em> <a href="https://doi.org/10.1002/mds.29153" target="_blank" rel="noopener">doi.org/10.1002/mds.29153</a></p>
+      <p>
+        Pérez-Oliveira, S., Álvarez, I., Rosas, I., et al. (2022).
+        Intermediate and expanded HTT alleles and the risk for α-synucleinopathies.
+        <em>Movement Disorders.</em>
+        <a
+          href="https://doi.org/10.1002/mds.29153"
+          target="_blank"
+          rel="noopener"
+        >doi.org/10.1002/mds.29153</a>
+      </p>
     </li>
+
     <li id="ref-6">
-      <p>Cuesta-Llavona, E., Lorca, R., Rolle, V., et al. (2022). Association of the genetic variation in the long non-coding RNA FENDRR with the risk of developing hypertrophic cardiomyopathy. <em>Life.</em> <a href="https://doi.org/10.3390/life12060818" target="_blank" rel="noopener">doi.org/10.3390/life12060818</a></p>
+      <p>
+        Cuesta-Llavona, E., Lorca, R., Rolle, V., et al. (2022).
+        Association of the genetic variation in the long non-coding RNA FENDRR with the risk of developing hypertrophic cardiomyopathy.
+        <em>Life.</em>
+        <a
+          href="https://doi.org/10.3390/life12060818"
+          target="_blank"
+          rel="noopener"
+        >doi.org/10.3390/life12060818</a>
+      </p>
     </li>
+
     <li id="ref-7">
-      <p>Rosas, I., Morís, G., Coto, E., et al. (2022). Smoking is associated with age at disease onset in Parkinson's disease. <em>Parkinsonism &amp; Related Disorders.</em> <a href="https://doi.org/10.1016/j.parkreldis.2022.03.005" target="_blank" rel="noopener">doi.org/10.1016/j.parkreldis.2022.03.005</a></p>
+      <p>
+        Rosas, I., Morís, G., Coto, E., et al. (2022).
+        Smoking is associated with age at disease onset in Parkinson's disease.
+        <em>Parkinsonism & Related Disorders.</em>
+        <a
+          href="https://doi.org/10.1016/j.parkreldis.2022.03.005"
+          target="_blank"
+          rel="noopener"
+        >doi.org/10.1016/j.parkreldis.2022.03.005</a>
+      </p>
     </li>
+
     <li id="ref-8">
-      <p>Cuesta-Llavona, E., Albaiceta, G. M., García-Clemente, M., et al. (2021). Association between the interferon-induced transmembrane protein 3 gene (IFITM3) rs34481144/rs12252 haplotypes and COVID-19. <em>Current Research in Virological Science.</em> <a href="https://doi.org/10.1016/j.crviro.2021.100016" target="_blank" rel="noopener">doi.org/10.1016/j.crviro.2021.100016</a></p>
+      <p>
+        Cuesta-Llavona, E., Albaiceta, G. M., García-Clemente, M., et al. (2021).
+        Association between the interferon-induced transmembrane protein 3 gene (IFITM3) rs34481144/rs12252 haplotypes and COVID-19.
+        <em>Current Research in Virological Science.</em>
+        <a
+          href="https://doi.org/10.1016/j.crviro.2021.100016"
+          target="_blank"
+          rel="noopener"
+        >doi.org/10.1016/j.crviro.2021.100016</a>
+      </p>
     </li>
+
   </ol>
+
 </section>
 
 <!-- ============ CONTACT / FOOTER ============ -->
 <footer class="colophon" id="contact">
+
   <div class="colophon__rule"></div>
 
   <div class="colophon__grid">
+
     <div>
       <span class="section__num">§7</span>
-      <h2><span data-lang="es">Contacto</span><span data-lang="en">Get in touch</span></h2>
-      <p data-lang="es">Abierto a oportunidades en biología marina, biología animal y trabajo de campo: observación científica a bordo, muestreo, seguimiento de fauna y monitorización ambiental.</p>
-      <p data-lang="en">Open to opportunities in marine biology, animal biology and fieldwork: onboard scientific observation, sampling, wildlife monitoring and environmental monitoring.</p>
-      <a class="contact-btn" href="mailto:israelddh@hotmail.com">israelddh@hotmail.com</a>
+
+      <h2>
+        <span data-lang="es">Contacto</span>
+        <span data-lang="en">Get in touch</span>
+      </h2>
+
+      <p data-lang="es">
+        Abierto a oportunidades en biología marina, biología animal y trabajo de campo: observación científica a bordo, muestreo, seguimiento de fauna y monitorización ambiental.
+      </p>
+
+      <p data-lang="en">
+        Open to opportunities in marine biology, animal biology and fieldwork: onboard scientific observation, sampling, wildlife monitoring and environmental monitoring.
+      </p>
+
+      <a class="contact-btn" href="mailto:israelddh@hotmail.com">
+        israelddh@hotmail.com
+      </a>
     </div>
 
     <div class="colophon__links">
-      <a href="https://linkedin.com/in/israel-duarte" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a href="https://github.com/Israelddh" target="_blank" rel="noopener">GitHub ↗</a>
-      <a href="https://orcid.org/0000-0001-5427-6019" target="_blank" rel="noopener">ORCID ↗</a>
+
+      <a
+        href="https://linkedin.com/in/israel-duarte"
+        target="_blank"
+        rel="noopener"
+      >LinkedIn ↗</a>
+
+      <a
+        href="https://github.com/Israelddh"
+        target="_blank"
+        rel="noopener"
+      >GitHub ↗</a>
+
+      <a
+        href="https://orcid.org/0000-0001-5427-6019"
+        target="_blank"
+        rel="noopener"
+      >ORCID ↗</a>
+
     </div>
+
   </div>
 
   <div class="colophon__bottom">
-    <span>© <span id="year"></span> Israel David Duarte Herrera</span>
-    <span><span data-lang="es">Naturalismo y trabajo de campo</span><span data-lang="en">Naturalism &amp; fieldwork</span></span>
+    <span>
+      © <span id="year"></span> Israel David Duarte Herrera
+    </span>
+
+    <span>
+      <span data-lang="es">Naturalismo y trabajo de campo</span>
+      <span data-lang="en">Naturalism & fieldwork</span>
+    </span>
   </div>
+
 </footer>
 
 <script src="posts.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
