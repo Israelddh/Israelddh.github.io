@@ -8,9 +8,10 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,0..60,400&family=IBM+Plex+Mono:wght@400;500;600&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+
 <script>
   (function(){
     var stored = localStorage.getItem('lang');
@@ -24,84 +25,237 @@
 <div class="grain" aria-hidden="true"></div>
 
 <header class="masthead">
+
   <div class="masthead__row">
+
     <span class="masthead__meta" id="dateline"></span>
+
     <div class="masthead__row-right">
-      <span class="masthead__meta"><span data-lang="es">Noticias</span><span data-lang="en">News</span></span>
-      <button class="lang-toggle" id="langToggle" type="button" aria-pressed="false" aria-label="Cambiar idioma / Switch language">
-        <span class="lang-toggle__track"><span class="lang-toggle__thumb"></span></span>
+
+      <span class="masthead__meta">
+        <span data-lang="es">Noticias</span>
+        <span data-lang="en">News</span>
+      </span>
+
+      <button
+        class="lang-toggle"
+        id="langToggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="Cambiar idioma / Switch language"
+      >
+        <span class="lang-toggle__track">
+          <span class="lang-toggle__thumb"></span>
+        </span>
+
         <span class="lang-toggle__label">Español</span>
       </button>
+
     </div>
+
   </div>
+
   <div class="nameplate">
-    <p class="nameplate__title"><span data-lang="es">Diario de Campo</span><span data-lang="en">The Field Journal</span></p>
-    <p class="nameplate__sub"><span data-lang="es">Biología marina · Fauna · Meteorología</span><span data-lang="en">Marine biology · Wildlife · Meteorology</span></p>
+
+    <p class="nameplate__title">
+      <span data-lang="es">Diario de Campo</span>
+      <span data-lang="en">The Field Journal</span>
+    </p>
+
+    <p class="nameplate__sub">
+      <span data-lang="es">Biología marina · Fauna · Meteorología</span>
+      <span data-lang="en">Marine biology · Wildlife · Meteorology</span>
+    </p>
+
   </div>
+
   <div class="masthead__rule"></div>
+
 </header>
 
+
 <div class="navbar">
+
   <nav class="masthead__nav" aria-label="Primary">
-    <a href="index.html"><span data-lang="es">Inicio</span><span data-lang="en">Home</span></a>
-    <a href="#notes" class="is-active"><span data-lang="es">Noticias</span><span data-lang="en">News</span></a>
-    <a href="#about"><span data-lang="es">Acerca de</span><span data-lang="en">About</span></a>
+
+    <a href="index.html">
+      <span data-lang="es">Inicio</span>
+      <span data-lang="en">Home</span>
+    </a>
+
+    <a href="#notes" class="is-active">
+      <span data-lang="es">Noticias</span>
+      <span data-lang="en">News</span>
+    </a>
+
+    <a href="#about">
+      <span data-lang="es">Acerca de</span>
+      <span data-lang="en">About</span>
+    </a>
+
   </nav>
+
 </div>
 
+
 <main>
+
+  <!-- ============ HERO ============ -->
+
   <section class="hero" id="top">
+
     <div class="hero__inner">
-      <p class="eyebrow"><span data-lang="es">Noticias</span><span data-lang="en">News</span></p>
-      <h1 class="hero__title" data-lang="es">Mar, fauna<br>y atmósfera</h1>
-      <h1 class="hero__title" data-lang="en">Sea, wildlife<br>&amp; atmosphere</h1>
-      <p class="hero__tagline" data-lang="es">Noticias sobre biología marina, fauna, pesquerías y meteorología, con enlace a la fuente original.</p>
-      <p class="hero__tagline" data-lang="en">News on marine biology, wildlife, fisheries and meteorology, linked to the original source.</p>
+
+      <p class="eyebrow">
+        <span data-lang="es">Noticias</span>
+        <span data-lang="en">News</span>
+      </p>
+
+      <h1 class="hero__title" data-lang="es">
+        Mar, fauna<br>y atmósfera
+      </h1>
+
+      <h1 class="hero__title" data-lang="en">
+        Sea, wildlife<br>&amp; atmosphere
+      </h1>
+
+      <p class="hero__tagline" data-lang="es">
+        Noticias sobre biología marina, fauna, pesquerías y meteorología, con enlace a la fuente original.
+      </p>
+
+      <p class="hero__tagline" data-lang="en">
+        News on marine biology, wildlife, fisheries and meteorology, linked to the original source.
+      </p>
+
     </div>
+
   </section>
+
+
+  <!-- ============ NEWS ============ -->
 
   <section class="section" id="notes">
+
     <div class="section__head">
+
       <span class="section__num">§1</span>
-      <h2><span data-lang="es">Noticias</span><span data-lang="en">News</span></h2>
+
+      <h2>
+        <span data-lang="es">Noticias</span>
+        <span data-lang="en">News</span>
+      </h2>
+
     </div>
+
     <div class="post-list" id="postList"></div>
+
   </section>
+
+
+  <!-- ============ ABOUT ============ -->
 
   <section class="section" id="about">
+
     <div class="section__head">
+
       <span class="section__num">§2</span>
-      <h2><span data-lang="es">Acerca de estas noticias</span><span data-lang="en">About this news feed</span></h2>
+
+      <h2>
+        <span data-lang="es">Acerca de estas noticias</span>
+        <span data-lang="en">About this news feed</span>
+      </h2>
+
     </div>
+
     <div class="hero__abstract">
-      <p data-lang="es">Es una selección personal con fines informativos. Cada entrada resume la noticia con mis palabras y enlaza a la fuente original. No representa la opinión de ningún empleador ni institución.</p>
-      <p data-lang="en">A personal selection for information purposes. Each entry summarises the story in my own words and links to the original source. It does not represent the views of any employer or institution.</p>
+
+      <p data-lang="es">
+        Es una selección personal con fines informativos. Cada entrada resume la noticia con mis palabras y enlaza a la fuente original. No representa la opinión de ningún empleador ni institución.
+      </p>
+
+      <p data-lang="en">
+        A personal selection for information purposes. Each entry summarises the story in my own words and links to the original source. It does not represent the views of any employer or institution.
+      </p>
+
     </div>
+
   </section>
+
 </main>
 
+
+<!-- ============ FOOTER ============ -->
+
 <footer class="colophon">
+
   <div class="colophon__rule"></div>
+
   <div class="colophon__grid">
+
     <div>
-      <span class="section__num"><span data-lang="es">Noticias</span><span data-lang="en">News</span></span>
+
+      <span class="section__num">
+        <span data-lang="es">Noticias</span>
+        <span data-lang="en">News</span>
+      </span>
+
       <h2>Israel David Duarte Herrera</h2>
-      <p><span data-lang="es">Biólogo · Trabajo de campo</span><span data-lang="en">Biologist · Fieldwork</span></p>
-      <a class="contact-btn" href="index.html"><span data-lang="es">Volver al inicio</span><span data-lang="en">Back to home</span></a>
+
+      <p>
+        <span data-lang="es">Biólogo · Trabajo de campo</span>
+        <span data-lang="en">Biologist · Fieldwork</span>
+      </p>
+
+      <a class="contact-btn" href="index.html">
+        <span data-lang="es">Volver al inicio</span>
+        <span data-lang="en">Back to home</span>
+      </a>
+
     </div>
+
     <div class="colophon__links">
-      <a href="https://linkedin.com/in/israel-duarte" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a href="https://github.com/Israelddh" target="_blank" rel="noopener">GitHub ↗</a>
-      <a href="https://orcid.org/0000-0001-5427-6019" target="_blank" rel="noopener">ORCID ↗</a>
+
+      <a
+        href="https://linkedin.com/in/israel-duarte"
+        target="_blank"
+        rel="noopener"
+      >LinkedIn ↗</a>
+
+      <a
+        href="https://github.com/Israelddh"
+        target="_blank"
+        rel="noopener"
+      >GitHub ↗</a>
+
+      <a
+        href="https://orcid.org/0000-0001-5427-6019"
+        target="_blank"
+        rel="noopener"
+      >ORCID ↗</a>
+
     </div>
+
   </div>
+
+
   <div class="colophon__bottom">
-    <span>© <span id="year"></span> Israel David Duarte Herrera</span>
-    <span><span data-lang="es">Noticias</span><span data-lang="en">News</span></span>
+
+    <span>
+      © <span id="year"></span> Israel David Duarte Herrera
+    </span>
+
+    <span>
+      <span data-lang="es">Noticias</span>
+      <span data-lang="en">News</span>
+    </span>
+
   </div>
+
 </footer>
+
 
 <script src="posts.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
